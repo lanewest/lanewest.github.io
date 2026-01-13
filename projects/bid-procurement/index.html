@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Coming Soon... | Lane Westerman</title>
+  <title>Automated Bid Procurement | Lane Westerman</title>
   <link rel="stylesheet" href="../../styles.css">   <!-- global vars -->
   <link rel="stylesheet" href="../styles.css">  <!-- project-specific -->
-
 </head>
 
 <body>
@@ -33,7 +32,7 @@
   <!-- Header -->
   <header class="project-header">
     <h1 class="project-title">
-      Coming Soon...
+      Automated Bid Procurement System
     </h1>
   </header>
 
@@ -43,32 +42,34 @@
 
       <!-- Typing animation -->
       <div class="typing-container">
-        <span class="typing-text" id="typing-text"></span><span class="typing-cursor"></span>
+        <span class="typing-text" id="typing-text" data-text="Automated bid discovery for infrastructure project procurement"></span>
+        <span class="typing-cursor"></span>
       </div>
 
       <!-- Summary -->
       <div class="project-description-group">
         <p id="project-summary-heading">
-          Stay tuned!
+            A Python application that automates the discovery of relevant procurement opportunities across 50+ airport and construction bid portals. 
+            Using Selenium for browser automation and BeautifulSoup for HTML parsing, the system navigates diverse website architectures—from 
+            JavaScript-heavy single-page applications to traditional paginated tables. 
         </p>
 
         <p>
-          More information about this project will be available soon.
+            Smart filtering logic matches bids against predefined keywords (baggage handling systems, terminal infrastructure, etc.) 
+            while validating status and closing dates to surface only actionable opportunities. 
+            Cookie persistence and human-like interaction patterns ensure reliable access to Cloudflare-protected sites. 
+            The result: comprehensive daily reports delivered in organized CSV format, reducing manual monitoring time by 90%.
         </p>
       </div>
     </div>
 
     <!-- Tech Stack -->
     <div class="tech-badges">
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
-      <span class="tech-badge"> </span>
+      <span class="tech-badge">Python</span>
+      <span class="tech-badge">Selenium</span>
+      <span class="tech-badge">BeautifulSoup4</span>
+      <span class="tech-badge">CSV</span>
+      <span class="tech-badge">Undetected-Chromedriver</span>
     </div>
   </section>
 
@@ -78,7 +79,7 @@
     <div class="demo-gallery">
       <article class="demo-item">
         <!-- Replace with actual image when available -->
-      <img src="assets/NetworkTopology.png" alt="Network topology diagram showing VMs and firewall segmentation">
+        <img src="assets/NetworkTopology.png" alt="Network topology diagram showing VMs and firewall segmentation">
       </article>
 
       <article class="demo-item">
@@ -120,6 +121,8 @@
       </div>
     </div>
   </section>
-<script src="../script.js"></script>
+
+  <!-- Load shared script -->
+  <script src="../script.js"></script>
 </body>
 </html>

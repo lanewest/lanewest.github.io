@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1.2rem 2rem;
-  background: rgba(10, 10, 15, 0.8);
+  background: rgba(29, 29, 34, 0.8);
   backdrop-filter: blur(10px);
   position: sticky;
   top: 0;
@@ -175,18 +175,18 @@
 
 .tech-badge {
   padding: 0.5rem 1rem;
-  background: rgba(6, 182, 212, 0.1);
-  border-radius: 20px;
+  background: rgba(246, 75, 1, 0.1);
+  border-radius: 10px;
   font-size: 0.9rem;
-  color: var(--accent-secondary);
-  border: 1px solid rgba(6, 182, 212, 0.3);
+  color: #ffffff;
+/* border: 1px solid rgba(6, 182, 212, 0.3); */
   transition: all 0.3s ease;
 }
 
 .tech-badge:hover {
-  background: var(--accent-secondary);
-  color: #fff;
-  box-shadow: 0 4px 12px rgba(6, 182, 212, 0.4);
+  background: rgba(246, 75, 1, 0.2);
+  /* color: #ffffff; */
+  box-shadow: 0 4px 12px rgba(213, 186, 174, 0.3);
   transform: translateY(-2px);
 }
 
@@ -253,7 +253,7 @@
 
 .demo-item:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 10px 40px rgba(213, 186, 174, 0.3);
   border-color: var(--accent-secondary);
 }
 
@@ -331,7 +331,7 @@
 .related-project-card:hover {
   transform: translateY(-8px);
   border-color: var(--accent-secondary);
-  box-shadow: 0 10px 30px rgba(6, 182, 212, 0.3);
+  box-shadow: 0 10px 30px rgba(213, 186, 174, 0.3);
 }
 
 .related-project-icon {
