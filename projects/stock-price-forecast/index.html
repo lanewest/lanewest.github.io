@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sandbox & Pen-Testing Research Suite | Lane Westerman</title>
+  <title>Lane's Portfolio</title>
+  <link rel="icon" type="image/png" href="assets/Logo_new.png">
   <link rel="stylesheet" href="../../styles.css">   <!-- global vars -->
   <link rel="stylesheet" href="../styles.css">  <!-- project-specific -->
 
@@ -25,15 +26,15 @@
     </a>
 
     <div class="project-nav nav-arrows" aria-label="Project navigation">
-      <a href="../object-detection/index.html" class="nav-arrow" title="Previous project">←</a>
-      <a href="../medical-image-classifier/index.html" class="nav-arrow" title="Next project">→</a>
+      <a href="../hurricane-classifier/index.html" class="nav-arrow" title="Previous project">←</a>
+      <a href="../bid-procurement/index.html" class="nav-arrow" title="Next project">→</a>
     </div>
   </div>
 
   <!-- Header -->
   <header class="project-header">
     <h1 class="project-title">
-      Integrated Sandbox & Pen-Testing Research Suite
+      Stock Price Forecasting Model
     </h1>
   </header>
 
@@ -43,36 +44,36 @@
 
       <!-- Typing animation -->
       <div class="typing-container">
-        <span class="typing-text" id="typing-text"></span><span class="typing-cursor"></span>
+        <span class="typing-text" id="typing-text" data-text="Teaching Machines to Read Market Trends"></span>
+        <span class="typing-cursor"></span>
       </div>
 
       <!-- Summary -->
       <div class="project-description-group">
         <p id="project-summary-heading">
-          This project involved building an isolated sandbox environment for cybersecurity experimentation.
-          Multiple virtual machines were configured with <strong>pfSense</strong> to manage network segmentation and enforce access control.
-          <strong>Kali Linux</strong> served as the attack machine while <strong>Ubuntu Server</strong> and <strong>Windows 10</strong>
-          acted as targets for exploitation and defense analysis.
+          A machine learning project demonstrating end-to-end implementation of a deep learning pipeline for financial time-series forecasting. 
+          Built with PyTorch, this LSTM-based neural network uses 30-day historical sequences to predict next-day stock closing prices. 
+          The model was trained over 200 epochs using Mean Squared Error loss and Adam optimization on Apple stock data retrieved from Yahoo Finance's API. 
         </p>
 
         <p>
-          Controlled penetration tests included buffer overflow attacks, SQL injections on DVWA, and password cracking with John the Ripper.
-          The project culminated in detailed documentation of vulnerabilities, exploit mitigations, and network traffic analysis using Wireshark and Snort.
+          The project showcases complete data science workflows including API integration for real-time market data retrieval, StandardScaler normalization 
+          for feature preprocessing, sequential data windowing for time-series modeling, and comparative visualizations of predicted versus actual price 
+          movements on held-out test data. Developed as a technical demonstration of Python's data science ecosystem including 
+          PyTorch, pandas, NumPy, scikit-learn, Matplotlib, and yfinance.
         </p>
       </div>
     </div>
 
     <!-- Tech Stack -->
     <div class="tech-badges">
-      <span class="tech-badge">Metasploit</span>
-      <span class="tech-badge">Wireshark</span>
-      <span class="tech-badge">Kali Linux</span>
-      <span class="tech-badge">pfSense</span>
-      <span class="tech-badge">VirtualBox</span>
-      <span class="tech-badge">Ubuntu Server</span>
-      <span class="tech-badge">Snort IDS</span>
-      <span class="tech-badge">DVWA</span>
-      <span class="tech-badge">John the Ripper</span>
+      <span class="tech-badge">Python</span>
+      <span class="tech-badge">Pandas</span>
+      <span class="tech-badge">PyTorch</span>
+      <span class="tech-badge">NumPy</span>
+      <span class="tech-badge">yfinance</span>
+      <span class="tech-badge">scikit-learn</span>
+      <span class="tech-badge">Matplotlib</span>
     </div>
   </section>
 
@@ -122,6 +123,8 @@
       </div>
     </div>
   </section>
-<script src="../script.js"></script>
+
+  <!-- Load shared script -->
+  <script src="../script.js"></script>
 </body>
 </html>
