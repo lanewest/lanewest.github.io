@@ -33,7 +33,7 @@
   <!-- Header -->
   <header class="project-header">
     <h1 class="project-title">
-      Integrated Sandbox & Pen-Testing Research Suite
+      AI-Driven Hurricane Forecasting Model
     </h1>
   </header>
 
@@ -43,36 +43,37 @@
 
       <!-- Typing animation -->
       <div class="typing-container">
-        <span class="typing-text" id="typing-text"></span><span class="typing-cursor"></span>
+        <span class="typing-text" id="typing-text" data-text="Predicting hurricane classifications using historical data & ML"></span>
+        <span class="typing-cursor"></span>
       </div>
 
       <!-- Summary -->
       <div class="project-description-group">
         <p id="project-summary-heading">
-          This project involved building an isolated sandbox environment for cybersecurity experimentation.
-          Multiple virtual machines were configured with <strong>pfSense</strong> to manage network segmentation and enforce access control.
-          <strong>Kali Linux</strong> served as the attack machine while <strong>Ubuntu Server</strong> and <strong>Windows 10</strong>
-          acted as targets for exploitation and defense analysis.
+          I developed a machine learning model that predicts hurricane classifications ahead of time using historical data from the NOAA National Hurricane Center’s 
+          HURDAT2 database, which contains records dating back to the 1800s. I wrote a custom Python preprocessing pipeline to parse and clean raw hurricane data, 
+          converting it into a structured dataset suitable for training. 
         </p>
 
         <p>
-          Controlled penetration tests included buffer overflow attacks, SQL injections on DVWA, and password cracking with John the Ripper.
-          The project culminated in detailed documentation of vulnerabilities, exploit mitigations, and network traffic analysis using Wireshark and Snort.
+          Using a Random Forest classifier, the model learns patterns in storm behavior and achieves 
+          approximately 95% accuracy in identifying F1 hurricane classifications before they occur. Because the model is trained on NOAA’s freely available datasets, 
+          it offers a cost-effective and scalable AI solution for disaster preparedness, forecasting, and risk assessment.
         </p>
       </div>
     </div>
 
     <!-- Tech Stack -->
     <div class="tech-badges">
-      <span class="tech-badge">Metasploit</span>
-      <span class="tech-badge">Wireshark</span>
-      <span class="tech-badge">Kali Linux</span>
-      <span class="tech-badge">pfSense</span>
-      <span class="tech-badge">VirtualBox</span>
-      <span class="tech-badge">Ubuntu Server</span>
-      <span class="tech-badge">Snort IDS</span>
-      <span class="tech-badge">DVWA</span>
-      <span class="tech-badge">John the Ripper</span>
+      <span class="tech-badge">Python</span>
+      <span class="tech-badge">Pandas</span>
+      <span class="tech-badge">Scikit-learn</span>
+      <span class="tech-badge">Random Forest</span>
+      <span class="tech-badge">NOAA HURDAT2</span>
+      <span class="tech-badge">Joblib</span>
+      <span class="tech-badge">CSV Data Piplines</span>
+      <span class="tech-badge">Custom Data Preprocessing</span>
+
     </div>
   </section>
 
