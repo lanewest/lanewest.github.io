@@ -7,7 +7,6 @@
   <link rel="icon" type="image/png" href="assets/Logo_new.png">
   <link rel="stylesheet" href="../../styles.css">   <!-- global vars -->
   <link rel="stylesheet" href="../styles.css">  <!-- project-specific -->
-
 </head>
 
 <body>
@@ -34,7 +33,7 @@
   <!-- Header -->
   <header class="project-header">
     <h1 class="project-title">
-      Stock Price Forecasting Model
+      Docent: AI-Powered Study Tool
     </h1>
   </header>
 
@@ -44,23 +43,36 @@
 
       <!-- Typing animation -->
       <div class="typing-container">
-        <span class="typing-text" id="typing-text" data-text="Teaching Machines to Read Market Trends"></span>
+        <span class="typing-text" id="typing-text" data-text="Building the AI pipeline behind an intelligent study platform"></span>
         <span class="typing-cursor"></span>
       </div>
 
       <!-- Summary -->
       <div class="project-description-group">
         <p id="project-summary-heading">
-          A machine learning project demonstrating end-to-end implementation of a deep learning pipeline for financial time-series forecasting. 
-          Built with PyTorch, this LSTM-based neural network uses 30-day historical sequences to predict next-day stock closing prices. 
-          The model was trained over 200 epochs using Mean Squared Error loss and Adam optimization on Apple stock data retrieved from Yahoo Finance's API. 
+          Docent is an AI tutor that answers from your course materials, lecture slides, 
+          handwritten notes, and assigned readings, rather than whatever it can find on the open 
+          web. Five of us built it over two sprints across 3 months. I owned the document ingestion pipeline: 
+          the path every file travels between a student dropping it into the browser and the AI 
+          being able to answer questions from it. This involved file uploads, text extraction, chunking, embedding, 
+          and semantic search.
         </p>
 
         <p>
-          The project showcases complete data science workflows including API integration for real-time market data retrieval, StandardScaler normalization 
-          for feature preprocessing, sequential data windowing for time-series modeling, and comparative visualizations of predicted versus actual price 
-          movements on held-out test data. Developed as a technical demonstration of Python's data science ecosystem including 
-          PyTorch, pandas, NumPy, scikit-learn, Matplotlib, and yfinance.
+          Sprint 1 — getting files into the system. I built the React upload interface and the 
+          Flask API behind it, wired up Firebase Storage, and implemented PDF text extraction with 
+          chunking. This is where much of the retrieval quality gets decided, since chunks that split mid-thought 
+          return useless context. Extracted text was embedded through the OpenAI API and stored in Qdrant for 
+          semantic search.
+        </p>
+
+        <p>
+          Sprint 2 — handwritten notes, and trusting the input. I integrated the Google Vision API 
+          so students could photograph handwritten notes into the same pipeline. OCR on handwriting is 
+          unreliable, and a bad transcription contaminates every answer later drawn from it, so I built an 
+          editable review UI letting students correct the extracted text before it gets embedded. I also added 
+          error handling across each stage, so a failed extraction relays a clear message rather than an empty 
+          document.
         </p>
       </div>
     </div>
@@ -68,12 +80,13 @@
     <!-- Tech Stack -->
     <div class="tech-badges">
       <span class="tech-badge">Python</span>
-      <span class="tech-badge">Pandas</span>
-      <span class="tech-badge">PyTorch</span>
-      <span class="tech-badge">NumPy</span>
-      <span class="tech-badge">yfinance</span>
-      <span class="tech-badge">scikit-learn</span>
-      <span class="tech-badge">Matplotlib</span>
+      <span class="tech-badge">Flask</span>
+      <span class="tech-badge">React</span>
+      <span class="tech-badge">Firebase</span>
+      <span class="tech-badge">Firestore</span>
+      <span class="tech-badge">OpenAI API</span>
+      <span class="tech-badge">Google Vision API</span>
+      <span class="tech-badge">Qdrant</span>
     </div>
   </section>
 
@@ -82,17 +95,7 @@
     <h2>Project Demo</h2>
     <div class="demo-gallery">
 
-      <article class="demo-item">
-        <img src="assets/stock_graphs.png" alt="Stock price graphs showing predicted vs actual prices">
-      </article>
-
-      <article class="demo-item">
-        <img src="assets/stock_table.png" alt="Stock price table showing actual prices of selected stock (NVDA)">
-      </article>
-
-      <article class="demo-item">
-        <img src="assets/stock_bad_graph.png" alt="Stock price graph showing just the actual prices">
-      </article>
+      <!-- Add demo assets here as the project matures -->
 
     </div>
 
@@ -101,20 +104,19 @@
       <h3>Explore More Projects</h3>
       <div class="related-grid">
         <a href="../bid-procurement/index.html" class="related-project-card">
-          <!-- <div class="related-project-icon">🎯</div> -->
+          <!-- <div class="related-project-icon">🎯</div> --> 
           <div class="related-project-name">Automated Bid Procurement</div>
         </a>
 
         <a href="../sandbox-pentesting/index.html" class="related-project-card">
-          <!-- <div class="related-project-icon">🛡️</div> -->
+          <!-- <div class="related-project-icon">🛡️</div> --> 
           <div class="related-project-name">Sandbox & Penetration Testing</div>
         </a>
 
         <a href="../hurricane-classifier/index.html" class="related-project-card">
-          <!-- <div class="related-project-icon">🌪️</div> -->
+          <!-- <div class="related-project-icon">🌪️</div> --> 
           <div class="related-project-name">AI Hurricane Classifier</div>
         </a>
-
       </div>
     </div>
   </section>
