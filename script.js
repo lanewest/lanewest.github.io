@@ -221,6 +221,6 @@ if (skillsGrid) {
 }
 
 // Console easter egg
-console.log('%c👋 Hey there!', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
+console.log('%cHey there!', 'font-size: 20px; font-weight: bold; color: #7c3aed;');
 console.log('%cInterested in the code? Check out my GitHub!', 'font-size: 14px; color: #06b6d4;');
 console.log('%cBuilt with vanilla HTML, CSS, and JavaScript', 'font-size: 12px; color: #10b981;');
