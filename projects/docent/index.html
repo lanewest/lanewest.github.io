@@ -59,19 +59,19 @@
         </p>
 
         <p>
-          Sprint 1 — getting files into the system. I built the React upload interface and the 
-          Flask API behind it, wired up Firebase Storage, and implemented PDF text extraction with 
-          chunking. This is where much of the retrieval quality gets decided, since chunks that split mid-thought 
-          return useless context. Extracted text was embedded through the OpenAI API and stored in Qdrant for 
+          Sprint 1 — getting files into the system. I built the <strong>React</strong> upload interface and the
+          <strong>Flask</strong> API behind it, wired up <strong>Firebase</strong> Storage, and implemented PDF text extraction with
+          chunking. This is where much of the retrieval quality gets decided, since chunks that split mid-thought
+          return useless context. Extracted text was embedded through the <strong>OpenAI API</strong> and stored in <strong>Qdrant</strong> for
           semantic search.
         </p>
 
         <p>
-          Sprint 2 — handwritten notes, and trusting the input. I integrated the Google Vision API 
-          so students could photograph handwritten notes into the same pipeline. OCR on handwriting is 
-          unreliable, and a bad transcription contaminates every answer later drawn from it, so I built an 
-          editable review UI letting students correct the extracted text before it gets embedded. I also added 
-          error handling across each stage, so a failed extraction relays a clear message rather than an empty 
+          Sprint 2 — handwritten notes, and trusting the input. I integrated the <strong>Google Vision API</strong>
+          so students could photograph handwritten notes into the same pipeline. OCR on handwriting is
+          unreliable, and a bad transcription contaminates every answer later drawn from it, so I built an
+          editable review UI letting students correct the extracted text before it gets embedded. I also added
+          error handling across each stage, so a failed extraction relays a clear message rather than an empty
           document.
         </p>
       </div>
